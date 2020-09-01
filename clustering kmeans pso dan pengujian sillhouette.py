@@ -42,9 +42,9 @@ fitur = len(data[0])
 
 #inisialisasi partikel awal
 partikel = [[] for j in range(jml_partikel)]
+x = [k for k in range(len(data))]
+rnd.shuffle(x)
 for i in range(jml_partikel):
-    x = [k for k in range(len(data))]
-    rnd.shuffle(x)
     for j in range(jml_cluster):
         y = x[j]
         partikel[i].append(data[y])
